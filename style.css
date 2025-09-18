@@ -1,7 +1,9 @@
-body {
-    background: radial-gradient(
-        circle at 50% 50%,
-        hsla(0, 0%, 100%, 0.7),
-        #fff
+.meu-nome{
+    
+    background-image: radial-gradient(
+        circle at 50% 50%,   /* centro do gradiente */
+        hsla(0, 0%, 100%, 0.7), /* cor inicial semi-transparente */
+        #fff                 /* cor final branca */
     );
+
 }
