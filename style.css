@@ -1,9 +1,57 @@
-.meu-nome{
-    
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji,
+        Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    margin: 0;
+}
+
+.Container-1 {
     background-image: radial-gradient(
-        circle at 50% 50%,   /* centro do gradiente */
-        hsla(0, 0%, 100%, 0.7), /* cor inicial semi-transparente */
-        #fff                 /* cor final branca */
+        circle at 50% 50%,
+        hsla(229, 85%, 87%, 0.47),
+        #fffaffde
     );
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+.Container-1 h1 {
+    font-size: 65px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #2563eb, #9333ea);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+.Container-1 p {
+    color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+    margin: 0;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+.scroll-down img {
+    width: 30px;
+    position: absolute;
+    bottom: 60px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
 }
